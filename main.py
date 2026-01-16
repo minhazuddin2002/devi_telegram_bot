@@ -2,14 +2,14 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 import os
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+BOT_TOKEN = os.getenv("********************************************")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text(f"হ্যালো সোনা ❤️, আমি তোমার দেবী! 😚")
+    await update.message.reply_text(f"Hello Jan, Ami Tumar Devi!")
 
 async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = update.message.text
-    await update.message.reply_text(f"তুমিই বললে, কলিজা 👉 {text}")
+    await update.message.reply_text(f"তুমিই বললে, 👉 {text}")
 
 def main():
     app = ApplicationBuilder().token(BOT_TOKEN).build()
