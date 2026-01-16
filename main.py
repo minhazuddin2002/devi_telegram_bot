@@ -9,7 +9,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = update.message.text
-    await update.message.reply_text(f"তুমিই বললে, 👉 {text}")
+    await update.message.reply_text(f"তুমিই বললে, {text}")
 
 def main():
     app = ApplicationBuilder().token(BOT_TOKEN).build()
